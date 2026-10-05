@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>ToDoList - All Tasks</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="app">
+
+    <aside class="sidebar">
+
+        <h2 class="logo">
+            <span>✓</span> ToDoList
+        </h2>
+
+        <nav>
+
+            <a href="index.html">🏠 Home</a>
+
+            <a class="active" href="tasks.html">
+                ☷ All Tasks
+            </a>
+
+            <a href="add-task.html">
+                ＋ Add Task
+            </a>
+
+            <a href="completed.html">
+                ✓ Completed
+            </a>
+
+            <a href="settings.html">
+                ⚙ Settings
+            </a>
+
+            <a href="about.html">
+                ⓘ About
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+    <main class="main">
+
+        <header class="page-heading">
+
+            <div>
+
+                <h1>All Tasks</h1>
+
+                <p>
+                    View and manage all your tasks in one place.
+                </p>
+
+            </div>
+
+            <input
+                id="searchInput"
+                class="search"
+                type="search"
+                placeholder="⌕ Search tasks..."
+            >
+
+        </header>
+
+
+        <div class="filters">
+
+            <button class="filter active"
+                    data-filter="all">
+                All
+            </button>
+
+            <button class="filter"
+                    data-filter="active">
+                Active
+            </button>
+
+            <button class="filter"
+                    data-filter="completed">
+                Completed
+            </button>
+
+        </div>
+
+
+        <div id="allTasks" class="task-list"></div>
+
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

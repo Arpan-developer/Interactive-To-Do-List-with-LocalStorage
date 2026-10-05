@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <aside class="sidebar">
+
+        <h2 class="logo">
+            <span>✓</span> ToDoList
+        </h2>
+
+        <nav>
+            <a class="active" href="index.html">🏠 Home</a>
+            <a href="tasks.html">☷ All Tasks</a>
+            <a href="add-task.html">＋ Add Task</a>
+            <a href="completed.html">✓ Completed</a>
+            <a href="settings.html">⚙ Settings</a>
+            <a href="about.html">ⓘ About</a>
+        </nav>
+
+        <p class="sidebar-bottom">
+            Your tasks, your progress.
+        </p>
+
+    </aside>
+
+
+    <main class="main">
+
+        <header class="topbar">
+
+            <div>
+                <h1>Good Morning, Arpan 👋</h1>
+                <p>Small steps every day lead to big results.</p>
+            </div>
+
+            <span id="today"></span>
+
+        </header>
+
+
+        <!-- Statistics -->
+
+        <section class="stats">
+
+            <div class="stat-card">
+                <span>▣</span>
+                <div>
+                    <small>Total Tasks</small>
+                    <strong id="totalCount">0</strong>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <span>✓</span>
+                <div>
+                    <small>Completed</small>
+                    <strong id="completedCount">0</strong>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <span>○</span>
+                <div>
+                    <small>Pending</small>
+                    <strong id="pendingCount">0</strong>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <span>◔</span>
+                <div>
+                    <small>Progress</small>
+                    <strong id="progressCount">0%</strong>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- Progress -->
+
+        <section class="progress-box">
+
+            <div class="progress-track">
+                <div id="progressBar"></div>
+            </div>
+
+            <p id="progressText">
+                0 of 0 tasks completed
+            </p>
+
+        </section>
+
+
+        <!-- Recent Tasks -->
+
+        <div class="section-head">
+            <h2>Recent Tasks</h2>
+
+            <a href="tasks.html">
+                View All →
+            </a>
+        </div>
+
+        <div id="recentTasks" class="task-list"></div>
+
+
+        <a href="add-task.html" class="primary-btn add-button">
+            ＋ Add New Task
+        </a>
+
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

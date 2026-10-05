@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>ToDoList - Completed</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="app">
+
+    <aside class="sidebar">
+
+        <h2 class="logo">
+            <span>✓</span> ToDoList
+        </h2>
+
+        <nav>
+
+            <a href="index.html">🏠 Home</a>
+
+            <a href="tasks.html">
+                ☷ All Tasks
+            </a>
+
+            <a href="add-task.html">
+                ＋ Add Task
+            </a>
+
+            <a class="active"
+               href="completed.html">
+                ✓ Completed
+            </a>
+
+            <a href="settings.html">
+                ⚙ Settings
+            </a>
+
+            <a href="about.html">
+                ⓘ About
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+    <main class="main">
+
+        <header class="page-heading">
+
+            <div>
+
+                <h1>Completed Tasks</h1>
+
+                <p>
+                    Here are all the tasks you've finished.
+                </p>
+
+            </div>
+
+            <button
+                id="clearCompleted"
+                class="secondary-btn"
+            >
+                Clear Completed
+            </button>
+
+        </header>
+
+
+        <div
+            id="completedTasks"
+            class="task-list"
+        ></div>
+
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

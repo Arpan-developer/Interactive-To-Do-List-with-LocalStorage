@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>ToDoList - Settings</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="app">
+
+    <aside class="sidebar">
+
+        <h2 class="logo">
+            <span>✓</span> ToDoList
+        </h2>
+
+        <nav>
+
+            <a href="index.html">🏠 Home</a>
+
+            <a href="tasks.html">☷ All Tasks</a>
+
+            <a href="add-task.html">＋ Add Task</a>
+
+            <a href="completed.html">✓ Completed</a>
+
+            <a class="active"
+               href="settings.html">
+                ⚙ Settings
+            </a>
+
+            <a href="about.html">ⓘ About</a>
+
+        </nav>
+
+    </aside>
+
+
+    <main class="main form-page">
+
+        <div class="page-heading">
+
+            <div>
+
+                <h1>Settings</h1>
+
+                <p>
+                    Customize your experience.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <section class="settings-card">
+
+            <div class="profile">
+
+                <div class="avatar">
+                    A
+                </div>
+
+                <div>
+                    <h3>Arpan Dutta</h3>
+                    <p>Frontend Developer</p>
+                </div>
+
+                <button class="secondary-btn">
+                    Edit Profile
+                </button>
+
+            </div>
+
+
+            <div class="setting-row">
+
+                <div>
+                    <h3>Appearance</h3>
+                    <p>
+                        Your preferred theme.
+                    </p>
+                </div>
+
+                <button class="theme-btn">
+                    ☾ Dark
+                </button>
+
+            </div>
+
+
+            <div class="setting-row">
+
+                <div>
+                    <h3>Local Storage</h3>
+
+                    <p>
+                        Tasks are saved in your browser.
+                    </p>
+
+                </div>
+
+                <span class="status">
+                    ● Connected
+                </span>
+
+            </div>
+
+
+            <div class="setting-row">
+
+                <div>
+
+                    <h3>Clear All Tasks</h3>
+
+                    <p>
+                        Permanently delete all tasks.
+                    </p>
+
+                </div>
+
+                <button
+                    id="clearAll"
+                    class="danger-btn"
+                >
+                    Clear All
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
